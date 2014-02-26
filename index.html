@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MinionsQuiz</title>
+    <link href="s40-theme/css/s40-theme.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="s40-theme/js/screensize.js"></script>
+    <script type="text/javascript">		
+		function refreshPageContent() {
+				// Add code for refreshing te page here...				
+		}		
+	</script>	
+    </script>	
+      <script language="javascript" type="text/javascript" src="http://cdn2.inner-active.mobi/wv-js/inneractive_nokia_S40.js"></script>
+<script language="javascript" type="text/javascript">
+function iklan() {
+//Parameter Wajib
+inneractive.parameters.divID = "IklanS40"; // ID DIV Tampil Iklan
+inneractive.parameters.appID = "syntasium_mangaQuiz_Nokia"; // ID App di Inneractive
+//Menampilkan Iklan
+inneractive.displayInneractiveAd();
+}
+</script>
+    <style type="text/css">
+<!--
+.style1 {color: #000000}
+-->
+    </style>
+</head>
+<script language="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://www.javascriptsource.com -->
+
+<!-- Begin
+// Insert number of questions
+var numQues = 10;
+
+// Insert number of choices in each question
+var numChoi = 2;
+
+// Insert number of questions displayed in answer area
+var answers = new Array(10);
+
+// Insert answers to questions
+answers[0] = "A";//1
+answers[1] = "B";//2
+answers[2] = "B";//3
+answers[3] = "A";//4
+answers[4] = "A";//5
+answers[5] = "B";//6
+answers[6] = "B";//7
+answers[7] = "A";//8
+answers[8] = "B";//9
+answers[9] = "A";//10
+
+
+
+// Do not change anything below here ...
+function getScore(form) {
+  var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        if (currSelection.value == answers[i]) {
+          score++;
+          break;
+        }
+      }
+    }
+  }
+  score = Math.round(score/numQues*100);
+  form.percentage.value = score + "%";
+  var correctAnswers = "";
+  for (i=1; i<=numQues; i++) {
+    correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  }
+  form.solutions.value = correctAnswers;
+}
+//  End -->
+</script>
+<body>
+    <div class="ui-page">
+        <span class="style1">
+        <!-- header -->
+        </span>
+        <div class="ui-header">
+             <div class="ui-title inline"><h2 class="style1">MinionsQuiz</h2>
+          </div><div class="refresh-icon inline"><a onclick="refreshPageContent();"><img alt="icon" src="s40-theme/images/refresh_40x40.png"/></a></div>
+      </div>
+        <div class="ui-content">
+ 			<form name="quiz">
+  <p><img src="Image/Papoy copy.png" width="224" height="119" /></p>
+ <body onload="javascript:iklan();">
+<div id="IklanS40">Load Ads</div>
+  <p>1. what the meaning of papoy?<br />
+  </p>
+  <ul style="margin-top: 1pt">
+  <li><input type="radio" name="q1" value="A">
+  TOY
+  <br />
+  </li>
+  <li><input type="radio" name="q1" value="B">
+    Ice Cream<br />
+  </li>
+ </ul>
+
+2. What serum make to evil Minions? <br />
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q2" value="A">
+  XXX-41
+  <br />
+  </li>
+  <li><input type="radio" name="q2" value="B">
+    PX-41
+  <li>3.What real color of minions<br />
+  </ul>
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q3" value="A">
+    Purple<br />
+  </li>
+  <li><input type="radio" name="q3" value="B">
+    Yellow</li>
+</ul>
+4. Favorite love fruit Minions?<br />
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q4" value="A">
+    Banana, apple</li>
+  <li><input type="radio" name="q4" value="B">
+    Avocado, Papaya</li>
+</ul>
+
+5.What the meaning of Gelato?<br />
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q5" value="A">
+    Ice cream<br />
+  </li>
+  <li><input type="radio" name="q5" value="B">
+    Apple</li>
+  <li>6. I Swear for minions language is?
+    <ul style="margin-top: 1pt">
+  <li><input type="radio" name="q6" value="A">
+    button</li>
+  <li><input type="radio" name="q6" value="B">
+    Underwear</li>
+</ul>
+
+7.Name song of despicable me by minions
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q7" value="A">
+    Purple</li>
+  <li><input type="radio" name="q7" value="B">
+    Banana spong</li>
+</ul>
+
+8.Tim, Mark, Phil must buy what a Toy?
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q8" value="A">
+    UNICORN</li>
+  <li><input type="radio" name="q8" value="B">
+    Dragon</li>
+</ul>
+
+
+9.Gru best friend?
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q9" value="A">
+    Dr. silvester</li>
+  <li><input type="radio" name="q9" value="B">
+    Dr. Nefario</li>
+</ul>
+
+
+10. Name Kids gru?
+<ul style="margin-top: 1pt">
+  <li><input type="radio" name="q10" value="A">
+    Margo, Edith &amp; Agnes</li>
+  <li><input type="radio" name="q10" value="B">
+    Naruto, Sasuke, hinata<br />
+  </li>
+</ul>
+
+
+</ul>
+
+<input type="button" value="Get score" onClick="getScore(this.form)">
+<input type="reset" value="Clear answers">
+<p> Score = <strong><input class="bgclr" type="text" size="5" name="percentage" disabled></strong>
+<p><br>
+</form></div>
+</div>    
+</body>
+</html>
